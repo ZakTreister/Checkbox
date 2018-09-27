@@ -8,29 +8,32 @@
   
   .wrap {
     max-width: 100vh;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
   .grid {
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: calc(100vh - 150px);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   
-  .grid>* {
+  .grid > * {
     background: orange;
-    padding: 10px;
+    padding: 20px;
     box-shadow: inset 0 0 0 1px #fff;
   }
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
     grid-gap: 10px;
     background-color: #2196F3;
     padding: 10px;
+    width:80%;
+    margin: auto;
   }
   .grid-container > div {
+    margin:0;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
+    padding: .5rem 0;
     font-size: 30px;
   }
